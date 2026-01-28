@@ -2,7 +2,7 @@
 # Customer Replica Dockerfile for CodeBuild ARM Networking Replication Test
 # This uses the EXACT package list from the customer's lambda.Dockerfile
 
-FROM ubuntu:noble
+FROM public.ecr.aws/docker/library/ubuntu:noble
 
 # Set environment to avoid interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
