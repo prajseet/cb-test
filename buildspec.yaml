@@ -9,4 +9,4 @@ phases:
   build:
     commands:
       - echo "Building Docker image"
-      - docker build -t test-arm:latest -f test-arm.Dockerfile.
+      - docker build -t test-arm:latest -f test-arm.Dockerfile .
