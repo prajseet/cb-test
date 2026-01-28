@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      docker: 23
+  pre_build:
+    commands:
+      - echo "Starting build at $(date)"
+  build:
+    commands:
+      - echo "Building Docker image"
+      - docker build -t test-arm:latest -f test-arm.Dockerfile.
